@@ -1,0 +1,55 @@
+.opt {
+	width: 70vw;
+	height: 60vh;
+	margin: 0 auto;
+	background-color: gray;
+	padding: 1em;
+	/* position: relative; */
+}
+
+.inline {
+	display: inline-block;
+}
+
+.logo {
+	float: left;
+}
+
+.myForm {
+	height: 160px;
+	text-align: center;
+	margin: 14vh 0 0 8vh;
+}
+
+.image {
+	height: 160px;
+	width: 160px;
+	position: absolute;
+	background-image: url(../img/angularjs.png);
+}
+
+.opt button {
+	font-size: 1em;
+	font-weight: bold;
+	box-shadow: 0.1em 0.1em;
+	border-radius: 0.2em;
+}
+
+.opt input {
+	margin: 2vh .5em;
+	border-radius: 0.4em;
+	height: 3.7vh;
+	width: 21vw;
+	text-align: center;
+	box-shadow: black 0.3em 0.3em;
+}
+
+.companyName {
+	font-size: 10vh;
+	font-weight: bold;
+	margin: 2vh 0 6vh 10vw;
+}
+
+.feet {
+	text-align: center;
+}
