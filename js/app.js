@@ -9,5 +9,5 @@ angular.module('acme',['ngRoute'])
 })
 .controller('mainCtrl', function() {
 	var mc = this;
-	mc.value = 0;
+	
 });

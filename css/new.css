@@ -1,10 +1,16 @@
+html {
+	background-color: mintcream;
+}
+
 .opt {
-	width: 70vw;
+	width: 71vw;
 	height: 60vh;
 	margin: 0 auto;
-	background-color: gray;
+	background-color: mediumseagreen;
+	border: 1px solid #bbb;
+	border-radius: 1em;
 	padding: 1em;
-	/* position: relative; */
+	position: relative;
 }
 
 .inline {
@@ -16,21 +22,26 @@
 }
 
 .myForm {
-	height: 160px;
 	text-align: center;
-	margin: 14vh 0 0 8vh;
+	position: absolute;
+	max-width: 60vw;
+	right: 9.4vw;
+	top: 21vh;
 }
 
 .image {
 	height: 160px;
 	width: 160px;
+	max-width: 15vw;
+	margin: 3em 0 0 0;
 	position: absolute;
 	background-image: url(../img/angularjs.png);
 }
 
 .opt button {
-	font-size: 1em;
+	font-size: 1.3em;
 	font-weight: bold;
+	font-family: monospace, sans-serif;
 	box-shadow: 0.1em 0.1em;
 	border-radius: 0.2em;
 }
@@ -41,13 +52,16 @@
 	height: 3.7vh;
 	width: 21vw;
 	text-align: center;
-	box-shadow: black 0.3em 0.3em;
+	font-size: 1.7em;
+	color: #555;
+	font-family: monospace, sans-serif;
+	background-color: seashell;
 }
 
 .companyName {
 	font-size: 10vh;
 	font-weight: bold;
-	margin: 2vh 0 6vh 10vw;
+	margin: 2vh 0 3vh 10vw;
 }
 
 .feet {
