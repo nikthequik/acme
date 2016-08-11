@@ -3,13 +3,7 @@ angular.module('acme')
 	return {
 		restrict: 'E',
 		templateUrl: 'templates/opt-in.html',
-		controller: 'dirCtrl',
-		controllerAs: 'dc',
 		transclude: true,
 		scope: false
 	}
-})
-.controller('dirCtrl', function(){
-	var dc = this;
-
 });

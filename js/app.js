@@ -3,11 +3,6 @@ angular.module('acme',['ngRoute'])
 	$routeProvider.when('/', {
 		templateUrl: 'partials/main.html',
 		transclude: true,
-		controller: 'mainCtrl',
-		controllerAs: 'mc'
 	});
-})
-.controller('mainCtrl', function() {
-	var mc = this;
-	
 });
+
