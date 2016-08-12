@@ -23,9 +23,11 @@ module.exports = function(config) {
         'node_modules/jasmine-core/lib/jasmine-core/jasmine.js',
         'node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js',
         'node_modules/karma-jasmine-html-reporter/src/lib/adapter.js',
+        '/node_modules/karma-ng-html2js-preprocessor/lib/html2js.js',
         'js/app.js',
+        'js/directives.js',
         'js/appSpec.js',
-        'templates/opt-in.html'
+        'templates/*.html'
     ],
 
 
@@ -37,11 +39,11 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-    'app/*.html': 'ng-html2js'
+    'templates/*.html': 'ng-html2js'
     },
     ngHtml2JsPreprocessor: {
         // strip app from the file path
-        stripPrefix: 'app/'
+        stripPrefix: 'templates/',
     },
 
 

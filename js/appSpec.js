@@ -7,6 +7,7 @@ describe('optIn directive', function() {
         img;
 
     beforeEach(module("acme"));
+    beforeEach(module('templates/opt-in.html'));
     beforeEach(inject(function($rootScope, $compile) {
         scope = $rootScope.$new();
         img = "Logo";
@@ -16,8 +17,12 @@ describe('optIn directive', function() {
         scope.$digest();
     }));
 
-    it('should render element, contain a form with 3 inputs, and transclude a logo', function(){
+    it('should contain a form with 3 inputs', function(){
     	console.log(element);
         expect(element.find('input').length).toBe(3);
-    })
+    });
+    it('should transclude a logo', function(){
+    	console.log(element);
+        expect(element.text()).toContain("Logo");
+    });
 });
